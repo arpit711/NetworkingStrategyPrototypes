@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TCPClientServer.iml" filepath="$PROJECT_DIR$/TCPClientServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetworkingProtocolsCode.iml" filepath="$PROJECT_DIR$/NetworkingProtocolsCode.iml" />
     </modules>
   </component>
 </project>

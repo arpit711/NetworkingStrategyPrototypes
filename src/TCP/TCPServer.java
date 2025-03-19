@@ -1,7 +1,9 @@
+package TCP;
+
 import java.io.*;
 import java.net.*;
 
-public class TcpServer {
+public class TCPServer {
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(6000);
         System.out.println("Server started. Waiting for client...");

@@ -1,5 +1,12 @@
-import java.net.*;
+package UDP;
 
+import java.net.*;
+/*
+*
+* The command names all the active Ports in use in the local maching at the moment
+* Command: lsof -i :5000
+*
+* */
 public class UDPServer {
     public static void main(String[] args) throws Exception {
         DatagramSocket socket = new DatagramSocket(5000);
@@ -15,7 +22,7 @@ public class UDPServer {
             System.out.println("Received: " + receivedMessage);
 
             // Send response
-            String response = "Hello from UDP Server!";
+            String response = "Hello from UDP Server! The Final Response Sent from Server after receiving request: " + receivedMessage;
             byte[] responseData = response.getBytes();
             DatagramPacket reply = new DatagramPacket(responseData, responseData.length,
                     request.getAddress(), request.getPort());
